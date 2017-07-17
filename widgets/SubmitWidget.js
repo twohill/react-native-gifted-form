@@ -1,3 +1,4 @@
+var PropTypes = require('prop-types');
 var React = require('react');
 
 
@@ -27,12 +28,12 @@ module.exports = React.createClass({
   },
 
   propTypes: {
-    onSubmit: React.PropTypes.func,
-    preSubmit: React.PropTypes.func,
-    isDisabled: React.PropTypes.bool,
-    activityIndicatorColor: React.PropTypes.string,
-    requiredMessage: React.PropTypes.string,
-    notValidMessage: React.PropTypes.string,
+    onSubmit: PropTypes.func,
+    preSubmit: PropTypes.func,
+    isDisabled: PropTypes.bool,
+    activityIndicatorColor: PropTypes.string,
+    requiredMessage: PropTypes.string,
+    notValidMessage: PropTypes.string,
   },
 
   getInitialState() {

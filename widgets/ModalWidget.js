@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import {
   View,
@@ -31,12 +32,12 @@ module.exports = React.createClass({
   },
 
   propTypes: {
-    type: React.PropTypes.string,
-    scrollEnabled: React.PropTypes.bool,
-    disclosure: React.PropTypes.bool,
-    cancelable: React.PropTypes.bool,
-    displayValue: React.PropTypes.string,
-    onClose: React.PropTypes.func
+    type: PropTypes.string,
+    scrollEnabled: PropTypes.bool,
+    disclosure: PropTypes.bool,
+    cancelable: PropTypes.bool,
+    displayValue: PropTypes.string,
+    onClose: PropTypes.func
   },
 
   getInitialState() {
