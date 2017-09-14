@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 const GiftedFormManager = require('./GiftedFormManager');
@@ -62,11 +63,11 @@ const GiftedForm = React.createClass({
   },
 
   propTypes: {
-    isModal: React.PropTypes.bool,
-    clearOnClose: React.PropTypes.bool,
-    validators: React.PropTypes.object,
-    defaults: React.PropTypes.object,
-    openModal: React.PropTypes.func,
+    isModal: PropTypes.bool,
+    clearOnClose: PropTypes.bool,
+    validators: PropTypes.object,
+    defaults: PropTypes.object,
+    openModal: PropTypes.func,
   },
 
   componentWillUnmount() {
@@ -106,7 +107,7 @@ var GiftedFormModal = React.createClass({
   },
 
   propTypes: {
-    isModal: React.PropTypes.bool,
+    isModal: PropTypes.bool,
   },
 
   render() {
