@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React from 'react';
+import createReactClass from 'create-react-class';
 
 const GiftedFormManager = require('./GiftedFormManager');
 
@@ -26,7 +26,8 @@ const LoadingWidget = require('./widgets/LoadingWidget');
 const HiddenWidget = require('./widgets/HiddenWidget');
 const ErrorsWidget = require('./widgets/ErrorsWidget');
 
-const GiftedForm = React.createClass({
+const GiftedForm = createReactClass({
+  displayName: 'GiftedForm',
   mixins: [ ContainerMixin ],
 
   statics: {
@@ -97,7 +98,8 @@ const GiftedForm = React.createClass({
   },
 });
 
-var GiftedFormModal = React.createClass({
+var GiftedFormModal = createReactClass({
+  displayName: 'GiftedFormModal',
   mixins: [ ContainerMixin ],
 
   getDefaultProps() {

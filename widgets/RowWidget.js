@@ -1,4 +1,5 @@
 var React = require('react');
+var createReactClass = require('create-react-class');
 var {
   View,
   Text,
@@ -11,7 +12,7 @@ var WidgetMixin = require('../mixins/WidgetMixin.js');
 var TimerMixin = require('react-timer-mixin');
 
 
-module.exports = React.createClass({
+module.exports = createReactClass({
   mixins: [TimerMixin, WidgetMixin],
   
   getDefaultProps() {

@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import createReactClass from 'create-react-class';
 import {
   View,
   Text,
@@ -17,7 +18,7 @@ var TimerMixin = require('react-timer-mixin');
 
 var moment = require('moment');
 
-module.exports = React.createClass({
+module.exports = createReactClass({
   mixins: [TimerMixin, WidgetMixin],
 
   getDefaultProps() {

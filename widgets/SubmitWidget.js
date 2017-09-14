@@ -2,6 +2,9 @@ var PropTypes = require('prop-types');
 var React = require('react');
 
 
+var createReactClass = require('create-react-class');
+
+
 var {View, Text} = require('react-native')
 var WidgetMixin = require('../mixins/WidgetMixin.js');
 
@@ -12,7 +15,7 @@ var GiftedFormManager = require('../GiftedFormManager');
 
 
 // @todo to test with validations
-module.exports = React.createClass({
+module.exports = createReactClass({
   mixins: [WidgetMixin],
 
   getDefaultProps() {
